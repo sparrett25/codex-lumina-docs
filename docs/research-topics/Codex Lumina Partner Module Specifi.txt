@@ -1,0 +1,98 @@
+**Codex Lumina: Partner Module Specification**
+
+---
+
+**Module Name:** Partner Portal System  
+**Module Type:** Standalone + Embeddable Content Module  
+**Purpose:** Allow aligned partners to submit curated content, which is reviewed, moderated, and delivered through AI-personalized experiences within Codex Lumina.
+
+---
+
+### 1. MODULE OVERVIEW
+
+The Partner Portal System serves as a bridge between Codex Lumina and spiritually aligned contributors. This system allows partners to submit offerings (tools, rituals, services, etc.) for inclusion in the platform. The offerings are curated through moderation and surfaced dynamically through AI-based content personalization engines.
+
+---
+
+### 2. CORE COMPONENTS
+
+#### A. Partner Submission Interface
+- Web-based partner dashboard or intake form
+- Fields:
+  - Partner Name
+  - Offering Title
+  - Short Bio
+  - Offering Description
+  - Link / Download / Embedded Content
+  - Tags:
+    - Energy Alignment: Light, Neutral, Dark
+    - Archetype Affinity: 12 options
+    - Emotional Tone Alignment: 9 tones
+    - Offering Type: Ritual, Course, Product, Resource, Event
+  - Image / Thumbnail Upload
+  - Consent to Guidelines
+
+#### B. Moderation + Integrity Filtering
+- Review Queue visible to Admin Team
+- Review Actions:
+  - Approve
+  - Request Edits
+  - Reject with Notes
+- AI-Aided Moderation Layer (optional v2):
+  - Tone analysis (sacred vs sales-oriented)
+  - Tag-accuracy suggestions
+  - Flag potential misalignment
+
+#### C. AI-Personalized Content Delivery Engine
+- Approved Partner Content is distributed through:
+  - Companion View (Liora whispers, daily prompts)
+  - Ritual Portal Suggestions
+  - Lumina Pulse (daily collective spotlight)
+  - Journal Module (recommendations post-entry)
+  - Dedicated Partner Portal Tab with filters
+
+---
+
+### 3. FUTURE ENHANCEMENTS
+- Affiliate Link Tracking and Dashboard
+- Seasonal / Celestial Partner Spotlights
+- Community Feedback Loop ("Did this resonate with you?")
+- Partner Performance Analytics (for contributors)
+- Verified Partner Seal System
+
+---
+
+### 4. DATA MODEL SNAPSHOT (Initial Draft)
+
+**PartnerOffering:**
+- id
+- partner_name
+- bio
+- title
+- description
+- tags (array)
+- image_url
+- content_link
+- energy_alignment
+- archetype_affinity
+- emotional_tones
+- offering_type
+- status (pending, approved, rejected)
+- reviewer_notes
+- created_at / updated_at
+
+---
+
+### 5. DEPLOYMENT STRATEGY
+- Internal development & testing (post-launch phase)
+- Invite-only pilot with early aligned partners
+- Gradual rollout across major modules
+
+---
+
+### 6. STATUS
+**Saved for Later Development**  
+All documentation and concept designs complete. Awaiting scheduling in development roadmap.
+
+---
+
